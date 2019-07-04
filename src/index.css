@@ -1,13 +1,121 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 14px 'Century Gothic', Futura, sans-serif;
+  margin: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 30vh;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 20vw;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  width: 100%;
+  height: 100%;
+}
+
+.game-board {
+  display: grid;
+  width: 70vw;
+}
+
+.game-info {
+  font-size: 4vw;
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 5%;
+  text-align: center;
+}
+
+.game-info .game-status {
+  padding: 0px;
+  margin: 0;
+}
+
+ol li button {
+  font-size: 3vw;
+}
+
+ol {
+  margin-top: 20px;
+}
+
+/* Custom */
+button {
+  display: inline-block;
+  position: relative;
+
+  padding: 20px 38px;
+  top: 0;
+  font-size: 30px;
+  font-family: 'Open Sans', Helvetica;
+  border-radius: 10px;
+  border-bottom: 1px solid rgba(28, 227, 125, 0.5);
+  background: rgba(22, 230, 137, 1);
+  color: #fff;
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.square {
+  color: #333333;
+}
+
+button:hover {
+  top: -10px;
+
+  -webkit-transform: rotateX(20deg);
+  -moz-transform: rotateX(20deg);
+  -ms-transform: rotateX(20deg);
+  transform: rotateX(20deg);
+}
+
+.square:hover {
+  top: 0px;
+
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+button:active {
+  top: 0px;
+  box-shadow: 0px 0px 0px rgba(15, 165, 60, 0);
+  background: rgba(20, 224, 133, 1);
 }
